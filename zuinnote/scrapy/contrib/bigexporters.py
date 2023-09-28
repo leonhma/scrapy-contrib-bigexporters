@@ -467,7 +467,7 @@ class AvroItemExporter(BaseItemExporter):
         # flush last items from records cache
         self._flush_table()
         # close any open file
-        self.file.close()
+        # self.file.close()
 
     def _flush_table(self):
         """
@@ -595,7 +595,7 @@ class OrcItemExporter(BaseItemExporter):
         self._flush_table()
         # close any open file
         self.orcwriter.close()
-        self.file.close()
+        # self.file.close()
 
     def _flush_table(self):
         """
